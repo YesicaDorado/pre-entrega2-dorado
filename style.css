@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.8)), url(assets/20230126_130352.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin: 0px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #f97ef185;
+    color: #fff;
+}
+
+.inicio {
+    display: flex;
+    height: 88%;
+    align-items: center;
+    text-align: left;
+}
+
+.contenedor-text {
+    flex-basis: 60%;
+}
+
+.contenedor-text h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: right;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.contenedor-text h2 {
+    color: #AD286E;
+    font-size: 30px;
+    text-align: right;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedor-text p {
+    color: #fff;
+    text-shadow: 0 0 15px;
+    font-size: 15px;
+    text-align: right;
+}
+
+/*Imagen inicio */
+.card-img img{
+    width: 497px;
+    height: 500px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-position:right;
+    background-size: cover;
+}
+
+h5 {
+    color: #AD286E;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 0 0 5px;
+    text-align: center;
+}
+
+#texto-animacion{
+    width: 100%;
+    height: 100px;
+    color: #41172d;
+}
+
+.texto-animacion{
+    font-family: 'Josefin sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+}
+
+.animacion{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #41172d, #AD286E, #41172d);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(148, 148, 148, 0);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: -500%;
+    }
+    100%
+    {
+        background-position: 500%;
+    }
+}
+
+.beneficios{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 200px ;
+}
+
+.beneficios .entrenamiento{
+    overflow: hidden;
+}
+
+.beneficios .entrenamiento img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.beneficios .entrenamiento:hover img{
+    transform: scale(1.25);
+}
+
+.text-entrenamiento{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.beneficios .text-entrenamiento span.texto-block{
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.beneficios .text-entrenamiento span.texto-block span{
+    display: inline-block;
+    background: #919191;
+    width: 70px;
+    height: 5px;
+}
+
+.beneficios .text-entrenamiento h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #41172d;
+    padding-bottom: 20px;
+}
+
+.beneficios .text-entrenamiento p{
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+.beneficios .text-entrenamiento a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #919191;
+    color: #41172d;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    border: 1px solid #AD286E;
+    background: #444444;
+}
+
+.footer .grupo-1{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 30px;
+}
+
+.footer .grupo-1 img{
+    width: 80px;
+    height: 80px;
+}
+
+.footer .grupo-1 .box p{
+    color: #919191;
+}
+.footer .grupo-1 .box h2{
+    color: #AD286E;
+    margin-bottom: 25px;
+    text-shadow: 0 0 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer a{
+    display: flex;
+    flex-direction: column;
+    color: #919191;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #919191;
+    margin-right: 10px;
+    transition: all 3s ease;
+}
+.footer .grupo-1 .red-social a:hover{
+    color: #AD286E;
+}
+
+.footer .grupo-2{
+    background-color: #41172d;
+    padding: 5px 5px;
+    text-align: center;
+    color: #919191;
+}
+
+
+/* Contacto */
+
+.contact{
+    background: #444444;
+    height: auto;
+}
+.navbarcontact {
+    background: #444444;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+
+section {
+    background: #444444;
+    color: #fff;
+    padding: 20px;
+}
+
+.contact-contenedor {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-form h3 {
+    font-size: 30px;
+    padding: 20px;
+    background-color: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form p {
+    background: #222222;
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #AD286E;
+}
+
+.contact-form form button {
+    background: #AD286E;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #444444;
+    color: #AD286E;
+    transition: background-color 1.3s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    padding: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.contact-info ul li {
+    padding: 10px;
+}
+
+@media (min-width: 700px) {
+    .contact-contenedor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    section {
+        padding: 200px;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 20px;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .logo{
+        width: 10%;
+    }
+
+    .contenedor-text h1{
+        font-size: 15px;
+    }
+
+    .contenedor-text h2{
+        font-size: 15px;
+    }
+
+    .contenedor-text p{
+        font-size: 15px;
+    }
+    
+    .card-img img{
+        width: 297px;
+    height: 300px;
+    display: inline-block;
+    background-position:unset;
+    }
+
+
+    #texto-animacion{
+        height: 400px;
+    }
+
+    .texto-animacion{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+}
